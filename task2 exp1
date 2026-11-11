@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+
+    float physics,chemistry,maths;
+    float total, average;
+    printf("Enter physics marks = ");
+    scanf("%f", &physics);
+
+    printf("Enter chemistry marks = ");
+    scanf("%f", &chemistry);
+
+    printf("Enter maths marks = ");
+    scanf("%f", &maths);
+
+    if ( physics > 100 || physics < 0 ||
+         chemistry > 100 || chemistry < 0 ||
+        maths > 100 || maths < 0 ){
+            printf("MARKS ARE NOT VALID");
+            return 1;
+        }
+        
+    
+    total = physics + chemistry + maths;
+    average = total/3;
+
+    printf("TOTAL = %f\n", total);
+
+    printf("AVERAGE = %f%\n", average);
+
+    if (average >= 50 && total >= 145){
+        printf("STUDENT IS ELIGIBLE FOR ADMISSION");
+    }
+    else {
+        printf("STUDENT IS NOT ELIGIBLE");
+    }
+    return 0;
+
+}
