@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+ int a, b, i, sum = 0;
+ printf("Enter the starting number: ");
+ scanf("%d", &a);
+ printf("Enter the ending number: ");
+ scanf("%d", &b);
+ for (i = a; i <= b; i++) {
+ if (i % 2 != 0) {
+ sum = sum + i;
+ }
+ }
+ printf("Sum of odd numbers between %d and %d = %d\n", a, b, sum);
+ return 0;
+    
+}
